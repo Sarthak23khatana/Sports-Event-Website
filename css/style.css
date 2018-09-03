@@ -1,0 +1,169 @@
+body
+{
+  margin: 0px !important;
+  padding: 0px !important;
+  overflow-x: hidden !important;
+}
+.row
+{
+  margin-top: 10px;
+}
+.LandingBg
+{
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+#Main_text
+{
+  margin-top: 250px;
+  letter-spacing: 6px;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  text-shadow: 0px 0px 1px #fff;
+
+}
+#main_btn
+{
+  margin-top: 80px;
+}
+.card-panel
+{
+  padding:20px !important;
+  border-radius: 20px;
+}
+.about_text
+{
+  font-size: 1.1rem;
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  line-height: 40px;
+}
+#dean
+{
+  margin-top: 120px;
+  letter-spacing: 4px;
+  font-family: 'Quicksand', sans-serif;
+  color: #00bcd4;
+
+}
+#first_row
+{
+  height: 350px;
+}
+#webteam_row
+{
+  height: 380px;
+  padding: 50px;
+}
+
+.card
+{
+  width: 200px;
+  height: 200px;
+}
+#Dean_card
+{
+  width: 250px;
+  height: 250px;
+}
+.card-content
+{
+  border-bottom: 4px solid #00bcd4;
+  padding: 10px !important;
+  letter-spacing: 1px;
+}
+.card-title
+{
+  font-size: 1rem !important;
+}
+
+.divider
+{
+  background-color: #212121;
+}
+
+
+.input-field input[type=text]:focus{
+  border-bottom: 1px solid #00bcd4 !important;
+  box-shadow: 0 1px 0 0 #00bcd4 !important;
+}
+
+.input-field input[type=tel]:focus{
+  border-bottom: 1px solid #00bcd4 !important;
+  box-shadow: 0 1px 0 0 #00bcd4 !important;
+}
+
+.input-field .prefix.active{
+  color: #00bcd4 !important;
+}
+ul.dropdown-content.select-dropdown li span {
+    color: #00bcd4;
+}
+label.active
+{
+  color: #00bcd4 !important;
+
+}
+
+.Register_btn
+{
+  background-color: #00bcd4 !important;
+}
+.SI
+{
+  color: #00bcd4;
+  letter-spacing: 1px;
+}
+#footer
+{
+  padding: 50px;
+}
+@media (max-width:768px)
+{
+ .RespMed
+ {
+   width: 150px;
+   height:150px ;
+ }
+ .card-content
+ {
+    padding: 0px !important;
+ }
+ #dean
+ {
+   margin-top: 10px;
+ }
+}
+@media (min-width:300px)
+{
+
+  .SmallResp
+  {
+    float: right;
+  }
+}
+
+
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.cursor {
+    animation: blink 0.7s infinite;
+}
