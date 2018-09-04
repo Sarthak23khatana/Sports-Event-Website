@@ -7,22 +7,61 @@ body
 }
 .row
 {
-  margin-top: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+.mt
+{
+  margin: 10px;
+}
+.mt5
+{
+  margin-top: 50px;
+}
+#No_margin
+{
+  margin-top: 0;
 }
 .LandingBg
 {
-  background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   height: 100vh;
+  animation-name: slider;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+@keyframes slider {
+   0%   {background-image: url("../img/bg1.jpg");}
+   25%   {background-image: url("../img/bg2.jpg");}
+   50%   {background-image: url("../img/bg3.jpg");}
+   75%   {background-image: url("../img/bg4.jpg");}
+   100%  {background-image: url("../img/bg1.jpg");}
+}
+.BorderLeft
+{
+  border-left: 5px solid #00bcd4;
+
+}
+.registerHead
+{
+  color: #00bcd4;
+  padding: 20px;
+}
+.container
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #Main_text
 {
-  margin-top: 250px;
+  margin-top: 220px;
   letter-spacing: 6px;
   color: #fff;
+  font-size: 2rem;
   text-shadow: 0px 0px 1px #fff;
-
+  font-family: 'Cabin Sketch', cursive;
 }
 #main_btn
 {
@@ -32,6 +71,7 @@ body
 {
   padding:20px !important;
   border-radius: 20px;
+  background-color: #00bcd4 !important;
 }
 .about_text
 {
@@ -59,7 +99,7 @@ body
   padding: 50px;
 }
 
-.card
+.RespLg
 {
   width: 200px;
   height: 200px;
@@ -95,7 +135,9 @@ body
   border-bottom: 1px solid #00bcd4 !important;
   box-shadow: 0 1px 0 0 #00bcd4 !important;
 }
-
+.checkbox input[type=checkbox]:checked{
+  color: #00bcd4;
+}
 .input-field .prefix.active{
   color: #00bcd4 !important;
 }
@@ -107,7 +149,10 @@ label.active
   color: #00bcd4 !important;
 
 }
-
+.error
+{
+  color: #ff5252;
+}
 .Register_btn
 {
   background-color: #00bcd4 !important;
@@ -132,10 +177,29 @@ label.active
  {
     padding: 0px !important;
  }
+
  #dean
  {
    margin-top: 10px;
  }
+ .LandingBg
+ {
+   background-image: url("../img/bgMobile.png");
+ }
+}
+@media (max-width:480px)
+{
+  .card-title
+  {
+    font-size: 1.2rem !important;
+  }
+  @keyframes slider {
+     0%   {background-image: url("../img/bgm1.jpg");}
+     25%   {background-image: url("../img/bgm2.jpg");}
+     50%   {background-image: url("../img/bgm3.jpg");}
+     75%   {background-image: url("../img/bgm4.jpg");}
+     100%  {background-image: url("../img/bgm1.jpg");}
+  }
 }
 @media (min-width:300px)
 {
@@ -145,7 +209,6 @@ label.active
     float: right;
   }
 }
-
 
 
 @keyframes blink{
