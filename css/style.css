@@ -22,6 +22,18 @@ body
 {
   margin-top: 0;
 }
+.BorderLeftB
+{
+  border-left: 5px solid #00bcd4;
+}
+.BorderLeftW
+{
+  border-left: 5px solid #fff;
+}
+.BorderLeftG
+{
+  border-left: 5px solid #212121;
+}
 .LandingBg
 {
   background-repeat: no-repeat;
@@ -29,7 +41,7 @@ body
   background-size: cover;
   height: 100vh;
   animation-name: slider;
-  animation-duration: 6s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
 }
 @keyframes slider {
@@ -39,34 +51,57 @@ body
    75%   {background-image: url("../img/bg4.jpg");}
    100%  {background-image: url("../img/bg1.jpg");}
 }
-.BorderLeft
-{
-  border-left: 5px solid #00bcd4;
 
-}
 .registerHead
 {
   color: #00bcd4;
   padding: 20px;
+  background-image: url("../img/bg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.container
+#akgec
 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  color: #fff;
+  font-size: 1.3rem;
+  width: 500px;
+  padding: 10px;
+  border: 3px solid #00bcd4;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px #212121;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin:auto;
+  margin-top: 200px;
+}
+.logo img
+{
+  width: 50px;
+  height: 50px;
+  float: left;
 }
 #Main_text
 {
-  margin-top: 220px;
+  margin-top: 20px;
   letter-spacing: 6px;
   color: #fff;
-  font-size: 2rem;
-  text-shadow: 0px 0px 1px #fff;
+  font-size: 4rem;
+  text-shadow: 0px 0px 10px #fff;
   font-family: 'Cabin Sketch', cursive;
 }
 #main_btn
 {
   margin-top: 80px;
 }
+.container
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
 .card-panel
 {
   padding:20px !important;
@@ -98,7 +133,10 @@ body
   height: 380px;
   padding: 50px;
 }
-
+.whitebg
+{
+  background-color: #fff;
+}
 .RespLg
 {
   width: 200px;
@@ -189,16 +227,38 @@ label.active
 }
 @media (max-width:480px)
 {
+  #akgec
+  {
+    font-size: 1rem;
+    width: auto;
+    border: none;
+    margin-top: auto;
+    color: #fff;
+  }
+
+  #Main_text
+  {
+    font-size: 1.2rem;
+    margin-top: 150px;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 2px #fff;
+  }
   .card-title
   {
     font-size: 1.2rem !important;
   }
   @keyframes slider {
-     0%   {background-image: url("../img/bgm1.jpg");}
-     25%   {background-image: url("../img/bgm2.jpg");}
-     50%   {background-image: url("../img/bgm3.jpg");}
-     75%   {background-image: url("../img/bgm4.jpg");}
-     100%  {background-image: url("../img/bgm1.jpg");}
+    0% {background-image: url("../img/bgm1.jpg");}
+    100% {background-image: url("../img/bgm1.jpg");}
+  }
+  .LandingBg
+  {
+    height: 400px;
+  }
+  #webteam_row
+  {
+    padding: 10px !important;
+    height: auto;
   }
 }
 @media (min-width:300px)
